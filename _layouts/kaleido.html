@@ -5,7 +5,6 @@ aside: kaleido
 {% include lang.html %}
 {% assign kaleido_instructions_text = site.data.locales[lang].kaleido.instructions_text | default: 'Instructions' %}
 {% assign kaleido_instructions = site.data.locales[lang].kaleido.instructions | default: 'kaleido is tool' %}
-{% assign kaleido_gif = '/commons/kaleido.gif' %}
 
 <div id="kaleido" class="pl-xl-3">
   <h2>{{ kaleido_instructions_text }}</h2>
@@ -14,5 +13,10 @@ aside: kaleido
     {{- kaleido_instructions -}}
     <a href="https://github.com/wp2code/kaleido-client" target="_blank">GitHub</a>
   </div>
-  <img src="{{ kaleido_gif }}" alt="">
+  {%- if site.kaleido_gif_url != empty and site.kaleido_gif_url -%}
+    {%- capture kaleido_gif_url -%}
+      {% include media-url.html src=site.kaleido_gif_url %}
+    {%- endcapture -%}
+    <img src="{{- kaleido_gif_url -}}" alt="kaleido" onerror="this.style.display='none'">
+  {%- endif -%}
 </div>

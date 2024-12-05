@@ -4,7 +4,7 @@ const gulp = require("gulp");
 // const concat = require('gulp-concat');
 const gutil = require("gulp-util");
 
-const siteRoot = "_site";
+const siteRoot = "_site/wp2code-site";
 
 function stoutJekyllLog(jekyll) {
   const jekyllLogger = (buffer) => {
@@ -20,7 +20,9 @@ function stoutJekyllLog(jekyll) {
   jekyll.stderr.on("data", jekyllLogger);
 }
 function buildWeb() {
-  const jekyll = exec("bundle exec jekyll build --watch --force_polling");
+  const jekyll = exec(
+    `bundle exec jekyll build --watch --force_polling -d ${siteRoot}`
+  );
   stoutJekyllLog(jekyll);
 }
 function startWeb() {
@@ -34,7 +36,9 @@ function startWeb() {
   });
 }
 function startWebWithJekyll() {
-  const jekyll = exec("bundle exec jekyll serve --livereload --force_polling");
+  const jekyll = exec(
+    `bundle exec jekyll serve --livereload --force_polling -d ${siteRoot}`
+  );
   stoutJekyllLog(jekyll);
 }
 gulp.task("jekyll", () => {
