@@ -47,8 +47,8 @@ jobs:
           
       - name: Build Css And Js
         run: |
-          npm run build:css
-          npm run build:js
+          npm install
+          npm run build
           
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
