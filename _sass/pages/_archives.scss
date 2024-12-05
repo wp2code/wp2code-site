@@ -1,5 +1,5 @@
-@use '../abstracts/breakpoints' as bp;
-@use '../abstracts/placeholders';
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/placeholders";
 
 #archives {
   letter-spacing: 0.03rem;
@@ -15,7 +15,7 @@
   $timeline-width: 4px;
 
   %timeline {
-    content: '';
+    content: "";
     width: $timeline-width;
     position: relative;
     float: left;
@@ -46,7 +46,7 @@
 
     /* Year dot */
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       border-radius: 50%;
@@ -123,7 +123,7 @@
 
     &::before {
       /* the dot before post title */
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       border-radius: 50%;
@@ -133,6 +133,33 @@
       top: 1.35rem;
       left: 71px;
       background-color: var(--timeline-node-bg);
+      box-shadow: 0 0 3px 0 #c2c6cc;
+      z-index: 1;
+    }
+  }
+
+  .timeline-node-active {
+    /* post title in Archvies */
+    margin-left: 2.5rem;
+    position: relative;
+    top: 0.1rem;
+
+    &:hover {
+      border-bottom: none;
+    }
+
+    &::before {
+      /* the dot before post title */
+      content: "";
+      display: inline-block;
+      position: relative;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      float: left;
+      top: 1.35rem;
+      left: 71px;
+      background-color: var(--timeline-node-bg-active);
       box-shadow: 0 0 3px 0 #c2c6cc;
       z-index: 1;
     }

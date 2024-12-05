@@ -2,11 +2,11 @@
 layout: default
 refactor: true
 ---
-
 {% include lang.html %}
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
+{% assign home_tip = site.posts | where_exp: 'item', 'item.category != kaleido and item.lastVersion != false' | first %}
 
 {% assign posts = '' | split: '' %}
 
@@ -32,6 +32,7 @@ refactor: true
 <!-- Get normal posts on current page -->
 
 {% assign normal_size = paginator.posts | size | minus: pinned_size %}
+{% assign normal_size = paginator.posts | size | minus: pinned_size %}
 
 {% if normal_size > 0 %}
   {% if pinned_size > 0 %}
@@ -46,7 +47,11 @@ refactor: true
     {% assign posts = posts | push: all_normal[i] %}
   {% endfor %}
 {% endif %}
-
+{% if home_tip %}
+  <blockquote class="prompt-tip">
+    <a href="{{ home_tip.url | relative_url }}">{{ home_tip.title }}</a>
+  </blockquote>
+{% endif %}
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">

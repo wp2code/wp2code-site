@@ -1,0 +1,18 @@
+---
+layout: page
+aside: kaleido
+---
+{% include lang.html %}
+{% assign kaleido_instructions_text = site.data.locales[lang].kaleido.instructions_text | default: 'Instructions' %}
+{% assign kaleido_instructions = site.data.locales[lang].kaleido.instructions | default: 'kaleido is tool' %}
+{% assign kaleido_gif = '/commons/kaleido.gif' %}
+
+<div id="kaleido" class="pl-xl-3">
+  <h2>{{ kaleido_instructions_text }}</h2>
+  <div class="divider-h"></div>
+  <div class="instruction">
+    {{- kaleido_instructions -}}
+    <a href="https://github.com/wp2code/kaleido-client" target="_blank">GitHub</a>
+  </div>
+  <img src="{{ kaleido_gif }}">
+</div>

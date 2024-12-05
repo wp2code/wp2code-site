@@ -15,6 +15,8 @@ tabs:
   tags: Tags
   archives: Archives
   about: About
+  kaleido: Kaleido
+  website: Website
 
 # the text displayed in the search bar & search results
 search:
@@ -89,3 +91,9 @@ categories:
   post_measure:
     singular: post
     plural: posts
+
+# kaleido tab
+kaleido:
+  instructions: 🚀Client tool based on Electron+Vue, support database connection, code generation and other functions.
+  instructions_text: Instructions
+  releases_log_text: Release Timeline

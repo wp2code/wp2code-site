@@ -1,11 +1,11 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as mx;
-@use '../abstracts/breakpoints' as bp;
-@use '../abstracts/placeholders';
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/placeholders";
 
 $btn-border-width: 3px;
 $btn-mb: 0.5rem;
-$sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
+$sidebar-display: "sidebar-display"; /* the attribute for sidebar display */
 
 #sidebar {
   @include mx.pl-pr(0);
@@ -18,6 +18,11 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   width: v.$sidebar-width;
   background: var(--sidebar-bg);
   border-right: 1px solid var(--sidebar-border-color);
+
+  // background-image: url("https://cdn.jsdelivr.net/gh/huanyushi/huanyushi.github.io@main/assets/img/background.jpg");
+  background-size: cover; /* <- customize the image size */
+  background-repeat: no-repeat; /* <- no-repeat */
+  background-position: top; /* <- image position */
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
@@ -236,7 +241,7 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
       @include mx.ml-mr(calc((v.$sb-btn-gap - $btn-border-width) / 2));
 
       background-color: var(--sidebar-btn-color);
-      content: '';
+      content: "";
       width: $btn-border-width;
       height: $btn-border-width;
       border-radius: 50%;
@@ -249,10 +254,21 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   } /* .sidebar-bottom */
 } /* #sidebar */
 
-[#{$sidebar-display}] {
-  #main-wrapper {
-    @include bp.lt(bp.get(lg)) {
-      transform: translateX(v.$sidebar-width);
-    }
-  }
-}
+// #sidebar .site-title a {
+//   color: #ffffff;
+//   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+// }
+
+// #sidebar > .site-subtitle {
+//   color: #ffffff;
+//   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+// }
+
+// #sidebar .sidebar-bottom .mode-toggle,
+// #sidebar a {
+//   color: #ffffff;
+// }
+
+// #sidebar .sidebar-bottom .btn {
+//   color: var(--sidebar-btn-color);
+// }

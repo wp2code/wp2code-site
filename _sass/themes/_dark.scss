@@ -97,6 +97,7 @@
   --timeline-node-bg: rgb(150, 152, 156);
   --timeline-color: rgb(63, 65, 68);
   --timeline-year-dot-color: var(--timeline-color);
+  --timeline-node-bg-active: #67c23a;
 
   /* Code highlight colors */
   --language-border-color: #2d2d2d;
@@ -110,6 +111,10 @@
   --code-header-icon-color: #565656;
   --clipboard-checked-color: #2bcc2b;
   --filepath-text-color: #cacaca;
+
+  /* --- border css --- */
+  --border-color: #dcdfe6;
+  --border-style: solid;
 
   .light {
     display: none;

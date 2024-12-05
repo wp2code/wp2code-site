@@ -1,0 +1,77 @@
+sites:
+  - category: "开源项目"
+    webs:
+      - title: "spring-cloud"
+        description: SpringCloud开源组织
+        link: https://github.com/spring-cloud
+      - title: "aliyun"
+        description: 阿里巴巴开源组织
+        link: https://github.com/aliyun
+      - title: "xxl-job"
+        description: 分布式任务调度框架
+        link: https://github.com/xuxueli/xxl-job/
+      - title: "Minio"
+        description: 分布式对象存储
+        link: https://github.com/minio
+      - title: "jxls"
+        description: 一个小巧易用的Java库，用于Excel报表生成，使用Excel模板文件
+        link: https://github.com/jxlsteam/jxls
+      - title: "knife4j"
+        description: Api接口文档（swagger的增强版本）
+        link: https://github.com/xiaoymin/knife4j
+  - category: "前端技术"
+    webs:
+      - title: "Element-Plus"
+        description: 基于 Vue 3，面向设计师和开发者的组件库
+        link: https://element-plus.org/zh-CN/
+      - title: "Ant-Design"
+        description: 蚂蚁集团开源的基于React的前端框架
+        link: https://ant-design.antgroup.com/index-cn
+      - title: "TypeORM"
+        description: JavaScript的ORM框架
+        link: https://typeorm.bootcss.com/
+      - title: "Icon资源"
+        description: 开源的icon图库
+        link: https://icones.js.org/
+      - title: "Liquid"
+        description: web模板语言
+        link: https://shopify.github.io/liquid/
+      - title: "Jekyll"
+        description: 静态网站生成器。
+        link: https://jekyllrb.com/docs/
+  - category: "数据库"
+    webs:
+      - title: "Shardingsphere"
+        description: 一款分布式的数据库生态系统， 可以将任意数据库转换为分布式数据库，并通过数据分片、弹性伸缩、加密等能力对原有数据库进行增强。
+        link: https://shardingsphere.apache.org/document/current/cn/overview/
+      - title: "墨天轮"
+        description: 中国数据库流行度排名网站。
+        link: https://www.modb.pro/rank
+  - category: "学习资料"
+    webs:
+      - title: "Hello algo"
+        description: 算法学习资源。
+        link: https://www.hello-algo.com/
+      - title: "Mapstruct"
+        description: 一款高性能的对象转换插件。
+        link: https://mapstruct.org/
+      - title: "Aviatorscript"
+        description: 高效的表达式引擎。
+        link: https://www.yuque.com/boyan-avfmj/aviatorscript
+      - title: "Sentinel"
+        description: Sentinel 是面向分布式、多语言异构化服务架构的流量治理组件。
+        link: https://sentinelguard.io/zh-cn/docs/introduction.html
+  - category: "其它工具"
+    webs:
+      - title: "iconfont"
+        description: 阿里开源免费的icon图库。
+        link: https://www.iconfont.cn/
+      - title: "在线翻译（Yandex）"
+        description: 在线翻译（支持多种格式）
+        link: https://translate.yandex.com/ocr
+      - title: "代码截图"
+        description: 可选择不同编程语言风格截图网站。
+        link: https://carbon.now.sh/
+      - title: "Idea 激活"
+        description: JetBrains产品激活资源网站。
+        link: https://blog.idejihuo.com/

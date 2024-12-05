@@ -97,6 +97,7 @@
   --timeline-color: rgba(0, 0, 0, 0.075);
   --timeline-node-bg: #c2c6cc;
   --timeline-year-dot-color: #ffffff;
+  --timeline-node-bg-active: #67c23a;
 
   /* --- Custom code light mode colors --- */
   --language-border-color: #ececec;
@@ -110,7 +111,11 @@
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
 
-  [class^='prompt-'] {
+  /* --- border css --- */
+  --border-color: #dcdfe6;
+  --border-style: solid;
+
+  [class^="prompt-"] {
     --link-underline-color: rgb(219, 216, 216);
   }
 

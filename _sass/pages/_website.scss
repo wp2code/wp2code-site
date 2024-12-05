@@ -1,0 +1,52 @@
+@mixin flex-div {
+  display: flex;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  height: max-content;
+  max-width: 500px;
+  background-color: black;
+  color: #ffffff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* 动画 */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#website {
+  @include flex-div;
+
+  flex-direction: column;
+
+  .web-item {
+    @include flex-div;
+
+    margin-top: 10px;
+    flex-direction: row;
+
+    .web-tag {
+      position: relative;
+      line-height: 1.75;
+      background-color: bisque;
+      display: inline-block;
+
+      &:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

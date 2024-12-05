@@ -1,18 +1,15 @@
 {
-  "name": "jekyll-theme-chirpy",
-  "version": "7.2.0",
-  "description": "A minimal, responsive, and feature-rich Jekyll theme for technical writing.",
+  "name": "wp2code-site",
+  "version": "1.0.0",
+  "description": "Personal learning and growth blog site",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
+    "url": "git+https://github.com/wp2code/wp2code-site.git"
   },
-  "author": "Cotes Chung",
+  "author": "wp2code",
   "license": "MIT",
-  "since": 2019,
-  "bugs": {
-    "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
-  },
-  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
+  "since": 2024,
+  "homepage": "https://wp2code.liuzixi.com/",
   "scripts": {
     "build": "concurrently npm:build:*",
     "build:css": "node purgecss.js",
@@ -40,8 +37,12 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "browser-sync": "^3.0.3",
     "concurrently": "^9.1.0",
     "conventional-changelog-conventionalcommits": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-util": "^1.3.0",
     "husky": "^9.1.7",
     "purgecss": "^7.0.2",
     "rollup": "^4.27.4",

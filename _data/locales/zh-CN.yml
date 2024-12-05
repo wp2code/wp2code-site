@@ -15,6 +15,8 @@ tabs:
   tags: 标签
   archives: 归档
   about: 关于
+  kaleido: kaleido
+  website: 收藏
 
 # the text displayed in the search bar & search results
 search:
@@ -81,3 +83,9 @@ df:
 categories:
   category_measure: 个分类
   post_measure: 篇文章
+
+# kaleido tab
+kaleido:
+  instructions: 🚀基于Electron+Vue开发的客户端工具，支持数据库连接、代码生成等功能。
+  instructions_text: 简介
+  releases_log_text: 发版日志
