@@ -44,7 +44,12 @@ jobs:
         with:
           ruby-version: 3.3.5
           bundler-cache: true
-
+          
+      - name: Build Css And Js
+        run: |
+          npm run build:css
+          npm run build:js
+          
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
