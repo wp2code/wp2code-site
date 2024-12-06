@@ -36,6 +36,9 @@ sites:
       - title: "Liquid"
         description: web模板语言
         link: https://shopify.github.io/liquid/
+      - title: "Jekyll"
+        description: 静态网站生成器
+        link: https://www.jekyll.com.cn/docs/collections/
       - title: "Jsdelivr"
         description: 开源项目的免费CDN
         link: https://www.jsdelivr.com/
