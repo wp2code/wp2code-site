@@ -148,13 +148,14 @@ pwa:
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
+      - "/wp2code-site"
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
 
 # The base URL of your site
 # baseurl: ""
-baseurl: "wp2code-site"
+baseurl: "/wp2code-site"
 
 # ------------ The following options are not recommended to be modified ------------------
 
