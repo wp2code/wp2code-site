@@ -69,6 +69,7 @@ layout: compress
 
     {% for _include in layout.script_includes %}
       {% assign _include_path = _include | append: '.html' %}
+      <div>_include_path : {{ _include_path }}</div>
       {% include {{ _include_path }} %}
     {% endfor %}
 
