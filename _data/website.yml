@@ -19,6 +19,16 @@ sites:
       - title: "Knife4j"
         description: Api接口文档（swagger的增强版本）
         link: https://github.com/xiaoymin/knife4j
+      - title: "flowable"
+        description: 流程引擎。
+        link: https://github.com/flowable
+      - title: "pig"
+        description: 快速的企业开发平台
+        link: https://github.com/pig-mesh/pig
+      - title: "commonmark-java"
+        description: Markdown 解析SDK
+        link: https://github.com/commonmark/commonmark-java
+
   - category: "前端技术"
     webs:
       - title: "Element-Plus"
@@ -45,12 +55,16 @@ sites:
       - title: "JS框架语法"
         description: 常用前端框架语法特征对比。
         link: https://component-party.lainbo.com/
-      - title: "TS语法"
+      - title: "TS文档"
         description: TypeScript中方文档。
         link: https://typescript.bootcss.com/index.html
       - title: "Electron"
         description: 跨平台构建桌面应用框架。
         link: https://www.electronjs.org/zh/
+      - title: "Electron-vite"
+        description: 基于 Vite 的Electron构建工具。
+        link: https://www.electronjs.org/zh/
+
   - category: "数据库"
     webs:
       - title: "Shardingsphere"
@@ -59,6 +73,12 @@ sites:
       - title: "墨天轮"
         description: 中国数据库流行度排名网站。
         link: https://www.modb.pro/rank
+      - title: "涛思"
+        description: 国产涛思时序数据库。
+        link: https://docs.taosdata.com/
+      - title: "influxDB"
+        description: 时序数据库。
+        link: https://www.influxdata.com/
   - category: "学习资料"
     webs:
       - title: "Hello algo"
@@ -73,8 +93,20 @@ sites:
       - title: "Sentinel"
         description: Sentinel 是面向分布式、多语言异构化服务架构的流量治理组件。
         link: https://sentinelguard.io/zh-cn/docs/introduction.html
+      - title: "编程算法"
+        description: 在线交互式编程算法。
+        link: https://algorithm-visualizer.org/
+      - title: "数据结构"
+        description: 数据结构可视化
+        link: https://www.cs.usfca.edu/~galles/visualization/about.html
   - category: "其它工具"
     webs:
+      - title: "在线工具"
+        description: 常用的在线工具。
+        link: https://tool.lu/
+      - title: "inscode"
+        description: InsCode 是一个一站式的软件开发服务平台，从开发-部署-运维-运营，都可以在 InsCode 轻松完成。
+        link: https://inscode-doc.inscode.cc/
       - title: "Iconfont"
         description: 阿里开源免费的icon图库。
         link: https://www.iconfont.cn/
@@ -87,3 +119,9 @@ sites:
       - title: "Idea 激活"
         description: JetBrains产品激活资源网站。
         link: https://blog.idejihuo.com/
+      - title: "图片编辑"
+        description: 在线编辑图片工具
+        link: https://www.internetmarketingninjas.com/tools/favicon-generator-crop-images/
+      - title: "在线minio"
+        description: 免费在线（Minio）图库
+        link: https://play.minio.org.cn/browser

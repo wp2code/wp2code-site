@@ -6,7 +6,7 @@ refactor: true
 
 {% assign all_pinned = site.posts | where: 'pin', 'true' %}
 {% assign all_normal = site.posts | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
-{% assign home_tip = site.posts | where_exp: 'item', 'item.category != kaleido and item.lastVersion != false' | first %}
+{% assign home_tip = site.posts | where: 'tip', 'true' | first %}
 
 {% assign posts = '' | split: '' %}
 
@@ -50,6 +50,9 @@ refactor: true
 {% if home_tip %}
   <blockquote class="prompt-tip">
     <a href="{{ home_tip.url | relative_url }}">{{ home_tip.title }}</a>
+    {%- if home_tip.tip_desc -%}
+      <span class="text-muted ms-1">{{ home_tip.tip_desc }}</span>
+    {%- endif -%}
   </blockquote>
 {% endif %}
 <div id="post-list" class="flex-grow-1 px-xl-1">

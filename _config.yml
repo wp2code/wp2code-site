@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: wp2code # the main title
 
-tagline: Blog Of Live # it will display as the subtitle
+tagline: Blog Of Life # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Diary about learning and growth
@@ -38,7 +38,7 @@ backgroud_animation: true
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: liuweiping
+  name: weiping liu
   email: liu_weipinglove@163.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
@@ -153,7 +153,8 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "/wp2code-site"
+baseurl: ""
+# baseurl: "wp2code-site"
 
 # ------------ The following options are not recommended to be modified ------------------
 

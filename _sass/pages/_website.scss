@@ -34,13 +34,16 @@
     @include flex-div;
 
     margin-top: 10px;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     .web-tag {
       position: relative;
       line-height: 1.75;
       background-color: bisque;
       display: inline-block;
+      margin-top: 5px;
+      flex-shrink: 0;
 
       &:hover .tooltiptext {
         visibility: visible;
