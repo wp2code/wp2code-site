@@ -1,10 +1,10 @@
 sites:
   - category: "开源项目"
     webs:
-      - title: "spring-cloud"
+      - title: "Spring-cloud"
         description: SpringCloud开源组织
         link: https://github.com/spring-cloud
-      - title: "aliyun"
+      - title: "Aliyun"
         description: 阿里巴巴开源组织
         link: https://github.com/aliyun
       - title: "xxl-job"
@@ -13,10 +13,10 @@ sites:
       - title: "Minio"
         description: 分布式对象存储
         link: https://github.com/minio
-      - title: "jxls"
+      - title: "Jxls"
         description: 一个小巧易用的Java库，用于Excel报表生成，使用Excel模板文件
         link: https://github.com/jxlsteam/jxls
-      - title: "knife4j"
+      - title: "Knife4j"
         description: Api接口文档（swagger的增强版本）
         link: https://github.com/xiaoymin/knife4j
   - category: "前端技术"
@@ -42,6 +42,15 @@ sites:
       - title: "Jsdelivr"
         description: 开源项目的免费CDN
         link: https://www.jsdelivr.com/
+      - title: "JS框架语法"
+        description: 常用前端框架语法特征对比。
+        link: https://component-party.lainbo.com/
+      - title: "TS语法"
+        description: TypeScript中方文档。
+        link: https://typescript.bootcss.com/index.html
+      - title: "Electron"
+        description: 跨平台构建桌面应用框架。
+        link: https://www.electronjs.org/zh/
   - category: "数据库"
     webs:
       - title: "Shardingsphere"
@@ -66,7 +75,7 @@ sites:
         link: https://sentinelguard.io/zh-cn/docs/introduction.html
   - category: "其它工具"
     webs:
-      - title: "iconfont"
+      - title: "Iconfont"
         description: 阿里开源免费的icon图库。
         link: https://www.iconfont.cn/
       - title: "在线翻译（Yandex）"
