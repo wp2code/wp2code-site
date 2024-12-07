@@ -2,7 +2,7 @@
 // VS code 安装 Code Runner
 const lqip = require("lqip");
 const path = require("path");
-const file = `./kaleido.png`;
+const file = `./github-mark.png`;
 const filePath = path.join(__dirname, file);
 console.log("filePath", filePath);
 lqip.base64(filePath).then((res) => {
