@@ -1,0 +1,12 @@
+<div class="access">
+  {% include_cached update-list.html lang=include.lang %}
+  {% include_cached trending-tags.html lang=include.lang %}
+</div>
+
+{% for _include in layout.panel_includes %}
+  {% assign _include_path = _include | append: '.html' %}
+  {% include {{ _include_path }} lang=include.lang %}
+{% endfor %}
+<div class="access">
+  {% include_cached friends.html lang=include.lang %}
+</div>

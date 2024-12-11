@@ -6,6 +6,7 @@ tail_includes:
   - post-nav
 script_includes:
   - comment
+
 ---
 {% include lang.html %}
 
@@ -116,6 +117,24 @@ script_includes:
     {{ content }}
   </div>
   <div class="post-tail-wrapper text-muted">
+    <!-- extend -->
+    {% if page.extend %}
+      {% if page.extend.download_url %}
+        <div class="post-assets">
+          {% assign download_url = page.extend.download_url %}
+          {% assign download_name = download_url | split: '/' | last %}
+          <span class="fas fa-download"></span>
+          <a href="{{ download_url }}" class="post-asset" target="_blank">{{ download_name }}</a>
+        </div>
+      {% endif %}
+      {% if page.extend.github_url %}
+        <div class="post-assets">
+          {% assign github_url = page.extend.github_url %}
+          <span class="fab fa-github-alt"></span>
+          <a href="{{ github_url }}" class="post-asset" target="_blank">{{ page.title }}</a>
+        </div>
+      {% endif %}
+    {% endif %}
     <!-- tags -->
     {% if page.tags.size > 0 %}
       <div class="post-tags">

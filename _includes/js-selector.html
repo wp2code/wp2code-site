@@ -6,7 +6,12 @@
 
 <!-- layout specified -->
 
-{% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' or page.layout == 'kaleido-post' %}
+{% if page.layout == 'post'
+  or page.layout == 'page'
+  or page.layout == 'home'
+  or page.layout == 'kaleido-post'
+  or page.layout == 'website-post'
+%}
   {% assign urls = urls | append: ',' | append: site.data.origin[type]['lazy-polyfill'].js %}
 
   {% unless page.layout == 'home' %}
@@ -26,6 +31,7 @@
   or page.layout == 'category'
   or page.layout == 'tag'
   or page.layout == 'kaleido-post'
+  or page.layout == 'website-post'
 %}
   {% assign locale = include.lang | split: '-' | first %}
 
@@ -53,8 +59,12 @@
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'categories', 'post', 'page', 'kaleido-post' %}
+  {% when 'home', 'categories', 'post', 'page' %}
+    {% assign js = page.layout %}
+  {% when 'kaleido-post' %}
     {% assign js = page.layout | replace: 'kaleido-', '' %}
+  {% when 'website-post' %}
+    {% assign js = page.layout | replace: 'website-', '' %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}
   {% else %}
@@ -73,7 +83,7 @@
 {% endif %}
 
 <!-- Pageviews -->
-{% if page.layout == 'post' or page.layout == 'kaleido-post' %}
+{% if page.layout == 'post' or page.layout == 'kaleido-post' or page.layout == 'website-post' %}
   {% assign provider = site.pageviews.provider %}
 
   {% if provider and provider != empty %}

@@ -1,7 +1,7 @@
-@use '../abstracts/variables' as v;
-@use '../abstracts/breakpoints' as bp;
-@use '../abstracts/mixins' as mx;
-@use '../abstracts/placeholders';
+@use "../abstracts/variables" as v;
+@use "../abstracts/breakpoints" as bp;
+@use "../abstracts/mixins" as mx;
+@use "../abstracts/placeholders";
 
 %-btn-post-nav {
   width: 50%;
@@ -10,7 +10,7 @@
 }
 
 @mixin -dot($pl: 0.25rem, $pr: 0.25rem) {
-  content: '\2022';
+  content: "\2022";
   padding-left: $pl;
   padding-right: $pr;
 }
@@ -138,6 +138,16 @@ header {
   font-size: 1rem;
 }
 
+.post-assets {
+  line-height: 2rem;
+
+  .post-asset {
+    &:hover {
+      @extend %link-hover;
+    }
+  }
+}
+
 .post-tags {
   line-height: 2rem;
 
@@ -248,7 +258,7 @@ header {
 /* TOC panel */
 
 %top-cover {
-  content: '';
+  content: "";
   display: block;
   position: sticky;
   top: 0;
@@ -332,7 +342,7 @@ header {
   }
 
   &::after {
-    content: '';
+    content: "";
     position: fixed;
     bottom: 0;
     width: 15%;
@@ -489,7 +499,7 @@ header {
   @include mx.label(inherit, 400, inherit);
 
   &::after {
-    content: ':';
+    content: ":";
   }
 }
 

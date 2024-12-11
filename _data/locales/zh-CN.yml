@@ -89,3 +89,7 @@ kaleido:
   instructions: 🚀基于Electron+Vue开发的客户端工具，支持数据库连接、代码生成等功能。
   instructions_text: 简介
   releases_log_text: 发版日志
+
+# website tab
+website:
+  friendlylinks_text: 友情链接

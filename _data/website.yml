@@ -1,3 +1,6 @@
+friendlylinks:
+  - title: 小林coding
+    url: https://xiaolincoding.com/
 sites:
   - category: "开源项目"
     webs:
@@ -43,6 +46,9 @@ sites:
       - title: "Icon资源"
         description: 开源的icon图库
         link: https://icones.js.org/
+      - title: "Iconfont"
+        description: 阿里开源免费的icon图库。
+        link: https://www.iconfont.cn/
       - title: "Liquid"
         description: web模板语言
         link: https://shopify.github.io/liquid/
@@ -99,6 +105,9 @@ sites:
       - title: "数据结构"
         description: 数据结构可视化
         link: https://www.cs.usfca.edu/~galles/visualization/about.html
+      - title: "xiaolincoding"
+        description: 数据结构可视化
+        link: https://xiaolincoding.com/
   - category: "其它工具"
     webs:
       - title: "在线工具"
@@ -107,9 +116,6 @@ sites:
       - title: "inscode"
         description: InsCode 是一个一站式的软件开发服务平台，从开发-部署-运维-运营，都可以在 InsCode 轻松完成。
         link: https://inscode-doc.inscode.cc/
-      - title: "Iconfont"
-        description: 阿里开源免费的icon图库。
-        link: https://www.iconfont.cn/
       - title: "在线翻译（Yandex）"
         description: 在线翻译（支持多种格式）
         link: https://translate.yandex.com/ocr
@@ -125,3 +131,6 @@ sites:
       - title: "在线minio"
         description: 免费在线（Minio）图库
         link: https://play.minio.org.cn/browser
+      - title: "smms图床"
+        description: 免费在线图床网站
+        link: hhttps://smms.app/

@@ -97,3 +97,7 @@ kaleido:
   instructions: 🚀Client tool based on Electron+Vue, support database connection, code generation and other functions.
   instructions_text: Instructions
   releases_log_text: Release Timeline
+
+# website tab
+website:
+  friendlylinks_text: Friendly Link
